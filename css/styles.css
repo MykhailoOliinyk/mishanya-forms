@@ -83,7 +83,7 @@ html {
 /*button*/
 
 .button {
-  width: 100%;
+  /* width: 100%; */
   margin: 21px 20px 52px 20px;
   padding: 16px 32px;
   background: #f5f5fa;
@@ -381,5 +381,18 @@ html {
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
+  }
+  /* new one */
+  .button {
+    width: 177px;
+    height: 56px;
+  }
+  .page-oder__pic2 {
+    display: flex;
+    margin-right: 0px;
+  }
+  .page-oder__contacts {
+    display: flex;
+    float: left;
   }
 }
