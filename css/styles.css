@@ -1,0 +1,385 @@
+/*-----Скидування стилів------*/
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: var(--prinary-font-family);
+  margin: 0px;
+  letter-spacing: 0.03em;
+}
+:root {
+  --primary-text-color: #2b2b2b;
+  --secondary-text-color: #487996;
+  --accent-color: #7ea8ca;
+  --primary-bg-color: #ffffff;
+  --primary-font-family: "Cera Pro", sant-serif;
+  --secondary-font-family: "Caviar Dreams", sant-serif;
+}
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+/*-Контейнер для обмеження контенту по ширині-*/
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*-Контейнер для обмеження контенту mobile-версії-*/
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  /* -Контейнер для обмеження контенту tablet-версії- */
+  /* @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 10px;
+    padding-right: 10px;
+  } */
+
+  /*-Контейнер для обмеження контенту desktop-версії-*/
+  @media screen and (min-width: 1444px) {
+    width: 1444px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/*button*/
+
+.button {
+  width: 100%;
+  margin: 21px 20px 52px 20px;
+  padding: 16px 32px;
+  background: #f5f5fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+  cursor: pointer;
+  border: none;
+
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #487996;
+  transition: box-shadow 300ms ease-out;
+}
+.button :hover {
+  box-shadow: -12px -12px 22px #ffffff, 12px 12px 22px rgba(24, 125, 184, 0.1),
+    7px 7px 22px rgba(35, 76, 99, 0.25), -7px -7px 12px #ffffff;
+}
+
+.button :focus {
+  box-shadow: -12px -12px 22px #ffffff, 12px 12px 22px rgba(23, 26, 27, 0.1),
+    7px 7px 22px rgba(2, 25, 37, 0.25), -7px -7px 12px #ffffff;
+}
+
+.button__link {
+  width: 100%;
+  height: 100%;
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #487996;
+}
+
+/****** HERO*****/
+
+.hero__page-oder {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-image: url(../images/decor_m.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__item-page-oder {
+  margin-bottom: 16px;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #487996;
+}
+.page-oder__form-field {
+  margin-bottom: 44px;
+}
+.page-oder__form-field-plastic {
+  position: relative;
+}
+
+.page-oder__icon-polygon1 {
+  width: 19px;
+  height: 13px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 3px;
+}
+.page-oder__icon-polygon1:focus {
+  color: red;
+}
+.page-oder__color {
+  margin-bottom: 44px;
+}
+.hero__page-oder-pic {
+  margin-bottom: 16px;
+}
+
+.hero__page_oder-text1,
+.hero__page_oder-text2 {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #2b2b2b;
+}
+.hero__page_oder-text1 {
+  margin-bottom: 16px;
+}
+.hero__page_oder-text2 {
+  margin-bottom: 52px;
+}
+.page-oder__form-item {
+  margin-bottom: 28px;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #487996;
+}
+.page-oder__form {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 40px;
+}
+
+.page-oder__form-input {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2b2b2b;
+  border: none;
+
+  border-bottom: 1px solid #487996;
+}
+.page-oder__content {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+.page-oder__contacts {
+  padding-left: 20px;
+}
+.page-oder__contacts-item {
+  margin-bottom: 8px;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #487996;
+}
+.page-oder__contacts-phone {
+  margin-bottom: 8px;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+
+.page-oder__contacts-list {
+  padding-left: 0px;
+  margin-bottom: 24px;
+}
+.page-oder__contacts-time {
+  margin-bottom: 8px;
+}
+.page-oder__message {
+  width: 100%;
+  height: 199px;
+  margin-bottom: 4px;
+  resize: none;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #cdcdcd;
+  border: 1px solid #487996;
+  box-sizing: border-box;
+  border-radius: 50px 0px;
+}
+.page-oder__form-message-text {
+  width: 100%;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #cdcdcd;
+}
+.page-oder__content {
+  margin-bottom: 4px;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+/* .modal-form__message:focus {
+  border-color: var(--accent-color);
+  outline: none;
+} */
+/*-Контейнер для обмеження контенту tablet-версії-*/
+@media screen and (min-width: 768px) {
+  .hero__blok-img {
+    display: flex;
+  }
+  .hero__item-page-oder {
+    margin-bottom: 24px;
+    margin-right: 60px;
+    margin-left: 60px;
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+
+    color: #487996;
+  }
+  .hero__page_oder-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 60px;
+    width: 100%;
+  }
+  .hero__blok-img {
+    margin-left: 60px;
+    margin-bottom: 52px;
+  }
+  .page-oder__form-item {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #487996;
+    margin-bottom: 7px;
+  }
+  .page-oder__form-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .hero__page-oder {
+    /* padding-right: 20px;
+    padding-left: 20px; */
+    background-image: url(../images/decor_t.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .page-oder__list {
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: space-between;
+  }
+  .button {
+    margin-bottom: 76px;
+  }
+}
+/*-Контейнер для обмеження контенту desktop-версії-*/
+@media screen and (min-width: 1444px) {
+  .hero__page-oder {
+    /* padding-right: 20px;
+    padding-left: 20px; */
+    background-image: url(../images/decor_d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .hero__page_oder-blok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__page_oder-text1,
+  .hero__page_oder-text2 {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
