@@ -73,15 +73,19 @@ html {
   } */
 
   /*-Контейнер для обмеження контенту desktop-версії-*/
-  @media screen and (min-width: 1444px) {
-    width: 1444px;
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
 /*button*/
-
+@media screen and (min-width: 320px) {
+  .button {
+    width: 100%;
+  }
+}
 .button {
   /* width: 100%; */
   margin: 21px 20px 52px 20px;
@@ -153,7 +157,14 @@ html {
 .page-oder__form-field {
   margin-bottom: 44px;
 }
+
 .page-oder__form-field-plastic {
+  position: relative;
+}
+.page-oder__form-field-print {
+  position: relative;
+}
+.page-oder__form-field-color {
   position: relative;
 }
 
@@ -163,16 +174,12 @@ html {
   position: absolute;
   bottom: 0px;
   right: 0px;
+  z-index: 999;
   margin-bottom: 3px;
 }
-.page-oder__icon-polygon1:focus {
-  color: red;
-}
+
 .page-oder__color {
   margin-bottom: 44px;
-}
-.hero__page-oder-pic {
-  margin-bottom: 16px;
 }
 
 .hero__page_oder-text1,
@@ -219,13 +226,14 @@ html {
 
   border-bottom: 1px solid #487996;
 }
+
 .page-oder__content {
+  margin-bottom: 4px;
   font-family: Cera Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  text-transform: capitalize;
   color: #2b2b2b;
 }
 .page-oder__contacts {
@@ -297,7 +305,7 @@ html {
   outline: none;
 } */
 /*-Контейнер для обмеження контенту tablet-версії-*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero__blok-img {
     display: flex;
   }
@@ -360,10 +368,11 @@ html {
   }
 }
 /*-Контейнер для обмеження контенту desktop-версії-*/
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
   .hero__page-oder {
-    /* padding-right: 20px;
-    padding-left: 20px; */
+    padding-right: 189px;
+    padding-left: 189px;
+
     background-image: url(../images/decor_d.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -376,23 +385,121 @@ html {
   }
   .hero__page_oder-text1,
   .hero__page_oder-text2 {
+    max-width: 100%;
     font-family: Cera Pro;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
+    margin-left: 32px;
   }
   /* new one */
+  .hero__blok-img {
+    display: flex;
+    margin-bottom: 100px;
+  }
   .button {
     width: 177px;
     height: 56px;
   }
   .page-oder__pic2 {
-    display: flex;
-    margin-right: 0px;
+    width: 538px;
+    height: 394px;
+    margin-right: 90px;
+    margin-left: 70px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
   }
   .page-oder__contacts {
     display: flex;
-    float: left;
+    float: right;
+    flex-direction: column;
+    margin-bottom: -50px;
+    margin-right: 189px;
+    text-align: right;
+  }
+  .page-oder__list {
+    display: block;
+  }
+
+  .page-oder__form-section {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero__item-page-oder {
+    margin-bottom: 24px;
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #487996;
+  }
+  .hero__page_oder-text1 {
+    margin-bottom: 24px;
+  }
+  .hero__page_oder-text2 {
+    margin-bottom: 35px;
+  }
+  .page-oder__pic1 {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-oder__conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-oder__form {
+    margin-left: 0;
+    width: 515px;
+  }
+  .page-oder__form-item {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+
+    color: #487996;
+  }
+  .button {
+    margin-left: 330px;
+  }
+  .page-oder__contacts-item {
+    margin-bottom: 18px;
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: right;
+
+    color: #487996;
+  }
+  .page-oder__contacts-list {
+    margin-bottom: 30px;
+  }
+  .page-oder__contacts-phone,
+  .page-oder__contacts-email,
+  .page-oder__contacts-time {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+    color: #2b2b2b;
+  }
+}
+@media screen and (max-width: 1339px) {
+  .page-oder__pic2 {
+    display: none;
   }
 }

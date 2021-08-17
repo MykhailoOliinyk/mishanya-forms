@@ -74,14 +74,20 @@
       <!-- </section> -->
 
       <!-- <section class=""> -->
-      <div class="conteiner">
+      <!-- <div class="conteiner"> -->
+      <div class="page-oder__conteiner">
         <div class="page-oder__form-section">
           <form action="#" class="page-oder__form">
             <h2 class="page-oder__form-item">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
 
-            <label class="page-oder__form-field" for="fname"></label>
+            <label
+              class="page-oder__form-field page-oder__form-field-name"
+              for="fname"
+            >
+            </label>
+
             <input
-              class="page-oder__form-input"
+              class="page-oder__form-input page-oder__form-input-name"
               type="text"
               placeholder="Ім’я"
               id="fname"
@@ -89,9 +95,12 @@
               required
             />
 
-            <label class="page-oder__form-field" for="email"></label>
+            <label
+              class="page-oder__form-field page-oder__form-field-email"
+              for="email"
+            ></label>
             <input
-              class="page-oder__form-input"
+              class="page-oder__form-input page-oder__form-input-email"
               type="text"
               placeholder="Email"
               id="email"
@@ -103,13 +112,14 @@
               class="page-oder__form-field page-oder__form-field-plastic"
               for="plastik"
             >
-              <!-- <svg class="page-oder__icon-polygon1" width="19" height="13">
-              <use href="./images/sprit.svg#icon-Polygon-3-1"></use>
-            </svg> -->
+              <span
+                ><svg class="page-oder__icon-polygon1" width="19" height="13">
+                  <use href="./images/sprit.svg#icon-Polygon-3-1"></use></svg
+              ></span>
             </label>
 
             <input
-              class="page-oder__form-input"
+              class="page-oder__form-input page-oder__form-input-plastic"
               type="text"
               placeholder="Види пластика"
               id="plastik"
@@ -117,9 +127,17 @@
               required
             />
 
-            <label class="page-oder__form-field" for="print"></label>
+            <label
+              class="page-oder__form-field page-oder__form-field-print"
+              for="print"
+            >
+              <span
+                ><svg class="page-oder__icon-polygon1" width="19" height="13">
+                  <use href="./images/sprit.svg#icon-Polygon-3-1"></use></svg
+              ></span>
+            </label>
             <input
-              class="page-oder__form-input"
+              class="page-oder__form-input page-oder__form-input-print"
               type="text"
               placeholder="Якість друку"
               id="print"
@@ -127,9 +145,21 @@
               required
             />
 
-            <label class="page-oder__form-field" for="color"></label>
+            <label
+              class="page-oder__form-field page-oder__form-field-color"
+              for="color"
+            >
+              <span
+                ><svg class="page-oder__icon-polygon1" width="19" height="13">
+                  <use href="./images/sprit.svg#icon-Polygon-3-1"></use></svg
+              ></span>
+            </label>
             <input
-              class="page-oder__form-input page-oder__color"
+              class="
+                page-oder__form-input
+                page-oder__color
+                page-oder__form-input-color
+              "
               type="text"
               placeholder="Колір"
               id="color"
@@ -149,58 +179,62 @@
               *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
             </p>
           </form>
-          <button type="button" class="button">ВІДПРАВИТИ</button>
+          <div class="page-oder__button">
+            <button type="button" class="button">ВІДПРАВИТИ</button>
+          </div>
         </div>
-      </div>
-      <!-- </section> -->
 
-      <!-- Contakts -->
+        <!-- </section> -->
 
-      <!-- <section class="page-oder__contacts-section"> -->
-      <div class="conteiner">
-        <div class="page-oder__contacts">
-          <ul class="page-oder__list list">
-            <li>
-              <h3 class="page-oder__contacts-item list">ТЕЛЕФОНИ</h3>
-              <ul class="page-oder__contacts-list">
-                <li class="page-oder__contacts-phone list">
-                  +38 (095) -73-84-551
+        <!-- Contakts -->
+
+        <!-- <section class="page-oder__contacts-section"> -->
+        <div class="conteiner">
+          <div class="page-oder__contacts-conteiner">
+            <div class="page-oder__contacts">
+              <ul class="page-oder__contacts-list page-oder__list list">
+                <li>
+                  <h3 class="page-oder__contacts-item list">ТЕЛЕФОНИ</h3>
+                  <ul class="page-oder__contacts-list">
+                    <li class="page-oder__contacts-phone list">
+                      +38 (095) -73-84-551
+                    </li>
+                    <li class="page-oder__contacts-phone list">
+                      +38 (098) -00-25-235
+                    </li>
+                  </ul>
                 </li>
-                <li class="page-oder__contacts-phone list">
-                  +38 (098) -00-25-235
+                <li>
+                  <h3 class="page-oder__contacts-item list">Email</h3>
+                  <ul class="page-oder__contacts-list">
+                    <li class="page-oder__contacts-email list">
+                      3dfreedom.info@gmail.com
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <h3 class="page-oder__contacts-item list">Робочий час</h3>
+                  <ul class="page-oder__contacts-list">
+                    <li class="page-oder__contacts-time list">
+                      Пн-пт: з 8:00 до 19:00
+                    </li>
+                    <li class="page-oder__contacts-time list">
+                      Сб, Нд: з 10:00 до 17:00
+                    </li>
+                  </ul>
                 </li>
               </ul>
-            </li>
-            <li>
-              <h3 class="page-oder__contacts-item list">Email</h3>
-              <ul class="page-oder__contacts-list">
-                <li class="page-oder__contacts-email list">
-                  3dfreedom.info@gmail.com
-                </li>
-              </ul>
-            </li>
+            </div>
 
-            <li>
-              <h3 class="page-oder__contacts-item list">Робочий час</h3>
-              <ul class="page-oder__contacts-list">
-                <li class="page-oder__contacts-time list">
-                  Пн-пт: з 8:00 до 19:00
-                </li>
-                <li class="page-oder__contacts-time list">
-                  Сб, Нд: з 10:00 до 17:00
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="page-oder__pic2">
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="./images/pic_d.png 1x, ./images/pic_d.png@2x.png 2x"
-            />
-            <img class="page-oder__pic2" src="#" alt="" />
-          </picture>
+            <!-- <picture> -->
+              <source
+                media="(min-width: 1440px)"
+                srcset="./images/pic_d.png 1x, ./images/pic_d.png@2x.png 2x"
+              />
+              <img class="page-oder__pic2" src="./images/pic_d.png" alt="" />
+            </picture>
+          </div>
         </div>
       </div>
     </section>
